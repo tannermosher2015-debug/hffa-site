@@ -75,10 +75,25 @@ def utility_bar():
       '</div></div></div>\n')
 
 def nav(active):
-    links = "".join(
-      f'<a class="nav-link" href="{href}"' + (' aria-current="page"' if href == active else '') + f'>{label}</a>'
-      for href, label in NAV_ITEMS)
-    mlinks = "".join(f'<a class="nav-link" href="{href}">{label}</a>' for href, label in NAV_ITEMS)
+    SUB = [("benefits.html", "Benefits"), ("members.html#shift-calendar", "Shift Calendar"),
+           ("members.html#cba-documents", "CBA Documents"), ("members.html#file-a-grievance", "File a Grievance")]
+    parts = []
+    for href, label in NAV_ITEMS:
+        cur = ' aria-current="page"' if href == active else ''
+        if href == "members.html":
+            dd = "".join(f'<li><a href="{h}">{l}</a></li>' for h, l in SUB)
+            parts.append('<div class="nav-item has-dropdown">'
+                f'<a class="nav-link" href="members.html"{cur} aria-haspopup="true">{label} <span class="caret" aria-hidden="true">▾</span></a>'
+                f'<ul class="dropdown" aria-label="Members submenu">{dd}</ul></div>')
+        else:
+            parts.append(f'<a class="nav-link" href="{href}"{cur}>{label}</a>')
+    links = "".join(parts)
+    mparts = []
+    for href, label in NAV_ITEMS:
+        mparts.append(f'<a class="nav-link" href="{href}">{label}</a>')
+        if href == "members.html":
+            mparts += [f'<a class="nav-link nav-sub" href="{h}">{l}</a>' for h, l in SUB]
+    mlinks = "".join(mparts)
     return (utility_bar() +
       '<header class="masthead-bar"><nav class="wrap topnav" aria-label="Primary">'
       '<a class="logo-link" href="index.html" aria-label="HFFA Local 1463 home">'
@@ -483,9 +498,9 @@ def main_members():
 
 <h2>Member Resources</h2>
 <div class="info-grid">
-  <div class="info-card"><h3>Shift Calendar</h3><p>Current 1st, 2nd, and 3rd Platoon schedules for all departments. Request the latest schedule from the office.</p></div>
-  <div class="info-card"><h3>CBA Documents</h3><p>The collective bargaining agreement governing the terms and conditions of employment — available to members through the office.</p></div>
-  <div class="info-card"><h3>File a Grievance</h3><p>Have a workplace issue? Reach out to your union steward or the HFFA office to start the grievance process.</p></div>
+  <div class="info-card" id="shift-calendar"><h3>Shift Calendar</h3><p>Current 1st, 2nd, and 3rd Platoon schedules for all departments. Request the latest schedule from the office.</p></div>
+  <div class="info-card" id="cba-documents"><h3>CBA Documents</h3><p>The collective bargaining agreement governing the terms and conditions of employment — available to members through the office.</p></div>
+  <div class="info-card" id="file-a-grievance"><h3>File a Grievance</h3><p>Have a workplace issue? Reach out to your union steward or the HFFA office to start the grievance process.</p></div>
   <div class="info-card"><h3>Member Benefits</h3><p>Voluntary MetLife supplemental coverage, PEC support, and health-screening credits. <a href="benefits.html">See full Benefits →</a></p></div>
 </div>
 
