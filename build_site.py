@@ -70,9 +70,6 @@ def utility_bar():
     return ('<div class="util"><div class="wrap">'
       '<span class="util-left">HFFA Local 1463 · IAFF · AFL-CIO</span>'
       '<div class="util-right">'
-      '<a href="contact.html#register" class="util-portal-only">Login</a>'
-      '<a href="contact.html#register" class="util-portal-only">Register</a>'
-      '<span class="util-div util-portal-only" aria-hidden="true"></span>'
       '<a class="util-phone" href="tel:+18089491566"><svg aria-hidden="true"><use href="#i-phone"/></svg> 808-949-1566</a>'
       '</div></div></div>\n')
 
@@ -89,13 +86,13 @@ def nav(active):
       f'<div class="nav-desktop">{links}</div>'
       '<div class="nav-actions">'
       '<button type="button" class="icon-btn" id="a11yOpen" aria-label="Open accessibility settings" aria-haspopup="dialog"><svg aria-hidden="true"><use href="#i-a11y"/></svg></button>'
-      '<a class="btn btn-gold nav-desktop-cta" href="contact.html#register">Member Portal</a>'
+      '<a class="btn btn-gold nav-desktop-cta" href="contact.html#register">Become a Member</a>'
       '<button type="button" class="icon-btn nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav"><svg aria-hidden="true"><use href="#i-menu"/></svg></button>'
       '</div></nav></header>\n'
       '<div class="mobile-overlay" id="mobileOverlay" hidden></div>'
       '<nav class="mobile-nav" id="mobileNav" hidden aria-label="Mobile navigation"><div class="mn-head"><strong>HFFA 1463</strong>'
       '<button type="button" class="icon-btn" id="navClose" aria-label="Close menu"><svg aria-hidden="true"><use href="#i-close"/></svg></button></div>'
-      f'{mlinks}<a class="btn btn-gold" href="contact.html#register">Member Portal</a></nav>\n')
+      f'{mlinks}<a class="btn btn-gold" href="contact.html#register">Become a Member</a></nav>\n')
 
 def footer():
     return ('<footer id="footer"><div class="wrap"><div class="footer-top">'
@@ -112,7 +109,7 @@ def footer():
       '</div></div>'
       '<div class="footer-cols">'
       '<div class="footer-col"><span class="label">Members</span>'
-      '<a href="benefits.html">Benefits</a><a href="contact.html#register">Member Portal</a><a href="contact.html">File a Grievance</a><a href="retirees.html">Retirees</a></div>'
+      '<a href="benefits.html">Benefits</a><a href="contact.html#register">Become a Member</a><a href="retirees.html">Retirees</a><a href="shop.html">Shop</a></div>'
       '<div class="footer-col"><span class="label">Association</span>'
       '<a href="about.html">About Us</a><a href="news.html">News</a><a href="shop.html">Shop</a><a href="contact.html">Contact</a></div>'
       '</div></div>'
@@ -145,7 +142,7 @@ def main_home():
       <h1 id="hero-h">You Can <span class="gold">Count On Us.</span></h1>
       <p class="hero-lead">HFFA Local 1463 has fought for Hawaii's fire service since 1963 — at the bargaining table, in the legislature, and alongside our members every single shift.</p>
       <div class="hero-cta">
-        <a class="btn btn-gold" href="contact.html#register">Member Portal</a>
+        <a class="btn btn-gold" href="contact.html#register">Become a Member</a>
         <a class="btn btn-ghost" href="news.html">Contract Updates</a>
       </div>
     </div>
@@ -212,7 +209,7 @@ def main_home():
       <div class="contract-card">
         <h3><span class="emoji" aria-hidden="true">📜</span> Contract Negotiations</h3>
         <p>Active negotiations are ongoing. Member updates and documents are available through the secure portal.</p>
-        <a class="btn btn-gold" href="contact.html#register">Login for Contract Updates →</a>
+        <a class="btn btn-gold" href="contact.html#register">Sign Up for Updates →</a>
       </div>
       <div class="notice-card">
         <h3><span class="emoji" aria-hidden="true">🕊️</span> In Memoriam</h3>
@@ -245,7 +242,7 @@ def main_home():
     <div class="res-head"><span class="label">Member Resources</span><h2 class="hl" id="res-h">Everything You Need</h2></div>
     <div class="res-grid">
       <a class="res-card" href="benefits.html"><div class="res-ico" aria-hidden="true">📋</div><h3>Member Benefits</h3><p>HFFA MetLife Group Plan, PEC portal, legal coverage, and IAFF FIREPAC.</p><span class="card-link">View Benefits →</span></a>
-      <a class="res-card" href="contact.html#register"><div class="res-ico" aria-hidden="true">📅</div><h3>Shift Calendar</h3><p>Current 1st, 2nd, and 3rd Platoon schedules for all departments.</p><span class="card-link">Member Portal →</span></a>
+      <a class="res-card" href="contact.html#register"><div class="res-ico" aria-hidden="true">📅</div><h3>Shift Calendar</h3><p>Current 1st, 2nd, and 3rd Platoon schedules for all departments.</p><span class="card-link">Contact Us →</span></a>
       <a class="res-card" href="news.html"><div class="res-ico" aria-hidden="true">💙</div><h3>Wellness &amp; Support</h3><p>Behavioral health resources, cancer support network, peer connections.</p><span class="card-link">Get Support →</span></a>
     </div>
   </section>
