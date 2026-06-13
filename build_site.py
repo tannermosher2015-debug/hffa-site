@@ -6,7 +6,7 @@ import os
 OUT = os.path.dirname(os.path.abspath(__file__))
 
 NAV_ITEMS = [("index.html", "Home"), ("benefits.html", "Benefits"), ("news.html", "News"),
-             ("about.html", "About"), ("retirees.html", "Retirees"), ("contact.html", "Contact")]
+             ("about.html", "About"), ("retirees.html", "Retirees"), ("shop.html", "Shop"), ("contact.html", "Contact")]
 
 SPRITE = (
 '<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>'
@@ -114,7 +114,7 @@ def footer():
       '<div class="footer-col"><span class="label">Members</span>'
       '<a href="benefits.html">Benefits</a><a href="contact.html#register">Member Portal</a><a href="contact.html">File a Grievance</a><a href="retirees.html">Retirees</a></div>'
       '<div class="footer-col"><span class="label">Association</span>'
-      '<a href="about.html">About Us</a><a href="news.html">News</a><a href="contact.html">Contact</a></div>'
+      '<a href="about.html">About Us</a><a href="news.html">News</a><a href="shop.html">Shop</a><a href="contact.html">Contact</a></div>'
       '</div></div>'
       '<div class="footer-bottom"><span class="copy">© <span id="yr">2026</span> Hawaii Fire Fighters Association</span>'
       '<span class="strong-tag">Local 1463 Strong</span></div></div></footer>\n')
@@ -471,6 +471,19 @@ def main_contact():
 </div>'''
 
 
+def main_shop():
+    inner = r'''<h2>HFFA Local 1463 Gear &amp; Merchandise</h2>
+<p>Show your Local 1463 pride. Official apparel, challenge coins, hats, towels, and more — with proceeds supporting our members and community programs.</p>
+<div class="callout callout-red">
+  <h3><span class="emoji" aria-hidden="true">🛒</span> Visit Our Official Store</h3>
+  <p>Our full catalog — tees, polos, dri-fit gear, snapbacks, challenge coins, the 2026–2027 calendar and more — is available now on our secure Square store.</p>
+  <a class="btn btn-gold" href="https://hawaii-fire-fighters-association.square.site" target="_blank" rel="noopener" style="margin-top:6px">Shop the HFFA Store →</a>
+</div>
+<p style="margin-top:18px"><strong>A built-in product gallery is coming soon to this page.</strong> For now, browse and order through the store above, or call the HFFA office at <a href="tel:+18089491566">808-949-1566</a> for assistance.</p>
+<p class="disclaimer">The Local 1463 logo is a registered trademark of the Hawaii Fire Fighters Association and may not be used without express authorization.</p>'''
+    return page_body("Member Store", "Shop", "Official HFFA Local 1463 apparel and gear — proceeds support our members and community.", inner)
+
+
 # ======================= BUILD =======================
 if __name__ == "__main__":
     page("index.html", "HFFA Local 1463 — Hawaii Fire Fighters Association",
@@ -491,4 +504,7 @@ if __name__ == "__main__":
     page("contact.html", "Contact — HFFA Local 1463",
          "Contact HFFA Local 1463 — 1018 Palm Drive, Honolulu HI 96814 · 808-949-1566 · info@iafflocal1463.org. Member registration & info.",
          "contact.html", main_contact())
+    page("shop.html", "Shop — HFFA Local 1463",
+         "Official HFFA Local 1463 store — apparel, challenge coins, hats, and gear. Proceeds support our members and community.",
+         "shop.html", main_shop())
     print("done.")
