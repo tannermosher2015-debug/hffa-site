@@ -5,8 +5,9 @@ This is a local dev tool — it is NOT needed by Netlify at runtime."""
 import os
 OUT = os.path.dirname(os.path.abspath(__file__))
 
-NAV_ITEMS = [("index.html", "Home"), ("benefits.html", "Benefits"), ("news.html", "News"),
-             ("about.html", "About"), ("retirees.html", "Retirees"), ("shop.html", "Shop"), ("contact.html", "Contact")]
+NAV_ITEMS = [("index.html", "Home"), ("about.html", "About"), ("members.html", "Members"),
+             ("wellness.html", "Wellness"), ("news.html", "News"), ("retirees.html", "Retirees"),
+             ("in-memoriam.html", "In Memoriam"), ("shop.html", "Shop"), ("contact.html", "Contact")]
 
 SPRITE = (
 '<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>'
@@ -109,9 +110,9 @@ def footer():
       '</div></div>'
       '<div class="footer-cols">'
       '<div class="footer-col"><span class="label">Members</span>'
-      '<a href="benefits.html">Benefits</a><a href="contact.html#register">Become a Member</a><a href="retirees.html">Retirees</a><a href="shop.html">Shop</a></div>'
+      '<a href="members.html">Members</a><a href="benefits.html">Benefits</a><a href="wellness.html">Wellness</a><a href="retirees.html">Retirees</a></div>'
       '<div class="footer-col"><span class="label">Association</span>'
-      '<a href="about.html">About Us</a><a href="news.html">News</a><a href="shop.html">Shop</a><a href="contact.html">Contact</a></div>'
+      '<a href="about.html">About Us</a><a href="news.html">News</a><a href="in-memoriam.html">In Memoriam</a><a href="shop.html">Shop</a><a href="contact.html">Contact</a></div>'
       '</div></div>'
       '<div class="footer-bottom"><span class="copy">© <span id="yr">2026</span> Hawaii Fire Fighters Association</span>'
       '<span class="strong-tag">Local 1463 Strong</span></div></div></footer>\n')
@@ -143,17 +144,17 @@ def main_home():
       <p class="hero-lead">HFFA Local 1463 has fought for Hawaii's fire service since 1963 — at the bargaining table, in the legislature, and alongside our members every single shift.</p>
       <div class="hero-cta">
         <a class="btn btn-gold" href="contact.html#register">Become a Member</a>
-        <a class="btn btn-ghost" href="news.html">Contract Updates</a>
+        <a class="btn btn-ghost" href="members.html">Contract Updates</a>
       </div>
     </div>
     <div class="hero-logo-wrap" aria-hidden="true"><img class="hero-logo" src="logo.png" alt="" /></div>
   </section>
   <div class="quicklinks"><div class="wrap" aria-label="Quick links">
-    <a class="quick-btn" href="contact.html#register"><span class="emoji" aria-hidden="true">📅</span> Shift Calendar</a>
-    <a class="quick-btn" href="contact.html#register"><span class="emoji" aria-hidden="true">📋</span> File a Grievance</a>
-    <a class="quick-btn" href="benefits.html"><span class="emoji" aria-hidden="true">📄</span> CBA Documents</a>
+    <a class="quick-btn" href="members.html"><span class="emoji" aria-hidden="true">📅</span> Shift Calendar</a>
+    <a class="quick-btn" href="members.html"><span class="emoji" aria-hidden="true">📋</span> File a Grievance</a>
+    <a class="quick-btn" href="members.html"><span class="emoji" aria-hidden="true">📄</span> CBA Documents</a>
     <a class="quick-btn" href="benefits.html"><span class="emoji" aria-hidden="true">💊</span> Benefits Portal</a>
-    <a class="quick-btn" href="news.html"><span class="emoji" aria-hidden="true">🆘</span> Crisis Support</a>
+    <a class="quick-btn" href="wellness.html"><span class="emoji" aria-hidden="true">🆘</span> Crisis Support</a>
   </div></div>
 </div>
 
@@ -209,14 +210,14 @@ def main_home():
       <div class="contract-card">
         <h3><span class="emoji" aria-hidden="true">📜</span> Contract Negotiations</h3>
         <p>Active negotiations are ongoing. Member updates and documents are available through the secure portal.</p>
-        <a class="btn btn-gold" href="contact.html#register">Sign Up for Updates →</a>
+        <a class="btn btn-gold" href="members.html">View Contract Updates →</a>
       </div>
       <div class="notice-card">
         <h3><span class="emoji" aria-hidden="true">🕊️</span> In Memoriam</h3>
         <p class="mem-item">Ret. Hawaii County FF George Sugi — passed May 6, 2026 (retired HFD 1985)</p>
         <p class="mem-item">Ret. Honolulu Capt. Albert Young — 25 yrs, Quint 12; private service</p>
         <p class="mem-item">Ret. Hawaii County FEO Darrel Sato — age 71, 25+ yrs of service</p>
-        <a class="card-link" href="news.html">More memorials &amp; services →</a>
+        <a class="card-link" href="in-memoriam.html">View In Memoriam →</a>
       </div>
       <div class="notice-card">
         <h3><span class="emoji" aria-hidden="true">📅</span> Upcoming Events</h3>
@@ -224,9 +225,9 @@ def main_home():
         <div class="event"><div class="event-date">October 2026</div><div class="event-name">HFF Signature Chefs Food Festival</div><div class="event-loc">13th annual — HFD Headquarters</div></div>
       </div>
       <div class="cancer-card">
-        <h3><span class="emoji" aria-hidden="true">🎗️</span> Cancer Awareness</h3>
+        <h3><span class="emoji" aria-hidden="true">🎗️</span> Wellness &amp; Cancer Support</h3>
         <p>Occupational cancer is the #1 cause of firefighter LODD. 247 of 311 IAFF line-of-duty deaths in 2025 were cancer-related.</p>
-        <a href="https://www.firefightercancersupport.org/request-assistance" target="_blank" rel="noopener">firefightercancersupport.org →</a>
+        <a href="wellness.html">Wellness &amp; Support →</a>
       </div>
     </aside>
   </div>
@@ -242,8 +243,8 @@ def main_home():
     <div class="res-head"><span class="label">Member Resources</span><h2 class="hl" id="res-h">Everything You Need</h2></div>
     <div class="res-grid">
       <a class="res-card" href="benefits.html"><div class="res-ico" aria-hidden="true">📋</div><h3>Member Benefits</h3><p>HFFA MetLife Group Plan, PEC portal, legal coverage, and IAFF FIREPAC.</p><span class="card-link">View Benefits →</span></a>
-      <a class="res-card" href="contact.html#register"><div class="res-ico" aria-hidden="true">📅</div><h3>Shift Calendar</h3><p>Current 1st, 2nd, and 3rd Platoon schedules for all departments.</p><span class="card-link">Contact Us →</span></a>
-      <a class="res-card" href="news.html"><div class="res-ico" aria-hidden="true">💙</div><h3>Wellness &amp; Support</h3><p>Behavioral health resources, cancer support network, peer connections.</p><span class="card-link">Get Support →</span></a>
+      <a class="res-card" href="members.html"><div class="res-ico" aria-hidden="true">📋</div><h3>Member Resources</h3><p>Shift calendar, CBA documents, grievances, and contract updates.</p><span class="card-link">View Members →</span></a>
+      <a class="res-card" href="wellness.html"><div class="res-ico" aria-hidden="true">💙</div><h3>Wellness &amp; Support</h3><p>Cancer awareness, behavioral health, and crisis &amp; peer support.</p><span class="card-link">Get Support →</span></a>
     </div>
   </section>
 
@@ -319,19 +320,9 @@ def main_news():
   <li>International Association of Fire Fighters Foundation (IAFF)</li>
   <li>National Fallen Fire Fighters Foundation (NFFF)</li>
   <li>Firefighters Cancer Support Network (FCSN)</li>
-</ul>
-
-<div class="callout callout-gold">
-  <h3>⚠️ Beware Suspicious Donation Calls</h3>
-  <p>HFFA is <strong>not</strong> conducting phone solicitations. If you receive a suspicious call for firefighter donations, ask for the organization name and a contact number, and check it against the State Attorney General's charity database at <a href="https://ag.ehawaii.gov/charity/search.html" target="_blank" rel="noopener">ag.ehawaii.gov/charity/search.html</a>. Do not share personal information with any suspicious caller.</p>
-</div>
-
-<h2>IAFF Center of Excellence</h2>
-<h3>Behavioral Health Treatment &amp; Recovery</h3>
-<p>There is growing concern about behavioral health in the fire service. The cumulative traumatic stresses faced by firefighters, paramedics, and EMTs can impact mental health and well-being. The IAFF Center of Excellence is an addiction-treatment facility built specifically for IAFF members struggling with addiction-related behavioral health challenges — a safe haven to talk with others who have overcome similar challenges.</p>
-<p>IAFF Center of Excellence · 13400 Edgemeade Rd, Upper Marlboro, MD 20772 · (301) 327-1955 · <a href="https://www.iaffrecoverycenter.com" target="_blank" rel="noopener">iaffrecoverycenter.com</a>. Learn more about IAFF <a href="https://www.iaff.org/behavioral-health/" target="_blank" rel="noopener">behavioral health</a>.</p>'''
+</ul>'''
     return page_body("Latest News", "News &amp; Updates",
-        "Legislative wins, foundations and events, safety alerts, and behavioral-health resources for Local 1463 members.", inner)
+        "Legislative updates, foundation events, and news from Local 1463 and the IAFF.", inner)
 
 
 def main_about():
@@ -481,6 +472,75 @@ def main_shop():
     return page_body("Member Store", "Shop", "Official HFFA Local 1463 apparel and gear — proceeds support our members and community.", inner)
 
 
+def main_members():
+    inner = r'''<p>Resources for active HFFA Local 1463 members. Most member documents are distributed through the office or the secure member system — <a href="contact.html">contact us</a> anytime and we'll get you what you need.</p>
+
+<h2>Contract &amp; Negotiations</h2>
+<div class="callout callout-red">
+  <h3>📜 Contract Negotiations &amp; Updates</h3>
+  <p>Active negotiations are ongoing. Member updates and the current collective bargaining agreement are shared with members directly. <a href="contact.html">Contact the office</a> for the latest status.</p>
+</div>
+
+<h2>Member Resources</h2>
+<div class="info-grid">
+  <div class="info-card"><h3>Shift Calendar</h3><p>Current 1st, 2nd, and 3rd Platoon schedules for all departments. Request the latest schedule from the office.</p></div>
+  <div class="info-card"><h3>CBA Documents</h3><p>The collective bargaining agreement governing the terms and conditions of employment — available to members through the office.</p></div>
+  <div class="info-card"><h3>File a Grievance</h3><p>Have a workplace issue? Reach out to your union steward or the HFFA office to start the grievance process.</p></div>
+  <div class="info-card"><h3>Member Benefits</h3><p>Voluntary MetLife supplemental coverage, PEC support, and health-screening credits. <a href="benefits.html">See full Benefits →</a></p></div>
+</div>
+
+<div class="callout callout-gold">
+  <h3>🤝 Need something specific?</h3>
+  <p>For shift schedules, CBA documents, grievance help, or contract questions, <a href="contact.html">contact the HFFA office</a> at 808-949-1566 or info@iafflocal1463.org. Also see <a href="wellness.html">Wellness &amp; Support</a> for behavioral-health and cancer resources.</p>
+</div>'''
+    return page_body("For Our Members", "Members", "Shift schedules, CBA documents, grievances, contract updates, and benefits — everything for active Local 1463 members.", inner)
+
+
+def main_wellness():
+    inner = r'''<p>Your health and safety come first. HFFA Local 1463 and the IAFF provide resources for firefighter wellness — from occupational cancer to behavioral health.</p>
+
+<h2>Firefighter Cancer Awareness</h2>
+<div class="callout callout-gold">
+  <h3>🎗️ Cancer is the #1 line-of-duty risk</h3>
+  <p>Occupational cancer is the leading cause of firefighter line-of-duty deaths. In 2025, 247 of 311 IAFF line-of-duty deaths were cancer-related. If you need assistance, the Firefighter Cancer Support Network can help.</p>
+  <p><a href="https://www.firefightercancersupport.org/request-assistance" target="_blank" rel="noopener">firefightercancersupport.org →</a></p>
+</div>
+
+<h2>Behavioral Health</h2>
+<h3>You Are Not Alone</h3>
+<p>The cumulative traumatic stresses faced by firefighters, paramedics, and EMTs can affect mental health and well-being. Support is available, and reaching out is a sign of strength.</p>
+
+<h3>IAFF Center of Excellence</h3>
+<p>The IAFF Center of Excellence for Behavioral Health Treatment and Recovery is an addiction-treatment facility built specifically for IAFF members — a safe place to recover alongside others who understand the job.</p>
+<p>13400 Edgemeade Rd, Upper Marlboro, MD 20772 · (301) 327-1955 · <a href="https://www.iaffrecoverycenter.com" target="_blank" rel="noopener">iaffrecoverycenter.com</a></p>
+<p>Learn more about IAFF <a href="https://www.iaff.org/behavioral-health/" target="_blank" rel="noopener">behavioral-health resources</a>.</p>
+
+<div class="callout callout-red">
+  <h3>📞 Need to talk now?</h3>
+  <p>If you or a member of your ʻohana is in crisis, call or text <strong>988</strong> (Suicide &amp; Crisis Lifeline), or reach the HFFA office at 808-949-1566 to connect with peer support.</p>
+</div>'''
+    return page_body("Wellness & Support", "Wellness", "Firefighter cancer awareness, behavioral health, and crisis & peer support for Local 1463 members and their families.", inner)
+
+
+def main_inmemoriam():
+    inner = r'''<p>We honor the Hawai'i firefighters who served their communities with courage and dedication. Their watch is over; we hold the line in their memory.</p>
+
+<h2>In Remembrance</h2>
+<div class="info-grid">
+  <div class="info-card"><h3>Ret. FF George Sugi</h3><p>Hawaii County Fire Department. Passed May 6, 2026; retired from HFD June 30, 1985. Our condolences to the Sugi ʻohana.</p></div>
+  <div class="info-card"><h3>Ret. Capt. Albert Young</h3><p>Honolulu Fire Department. Appointed February 24, 1975 and served 25 years; last assigned to Quint 12, 3rd Platoon. A private service was held.</p></div>
+  <div class="info-card"><h3>Ret. FEO Darrel Sato</h3><p>Hawaii County Fire Department, age 71. Served over 25 years until his retirement in December 2013. Keep his family in your thoughts.</p></div>
+</div>
+
+<h2>Fallen Fire Fighter Memorials</h2>
+<div class="callout callout-red">
+  <h3>🕊️ IAFF Fallen Fire Fighter Memorial</h3>
+  <p>The IAFF's 40th Fallen Fire Fighter Memorial Observance is Saturday, September 19, 2026, in Colorado Springs. Honolulu FF1 <strong>Jeffrey Fiala</strong>'s name will be engraved on the IAFF Wall of Honor alongside others who made the ultimate sacrifice. <a href="https://www.iaff.org" target="_blank" rel="noopener">Learn more →</a></p>
+</div>
+<p><strong>National Fallen Firefighters Memorial</strong> — held May 2–3, 2026 in Emmitsburg, Maryland, honoring firefighters from 2025 and prior years. Learn more at the <a href="https://www.firehero.org" target="_blank" rel="noopener">National Fallen Firefighters Foundation</a>.</p>'''
+    return page_body("In Memoriam", "In Memoriam", "Honoring the Hawai'i firefighters we have lost, and the IAFF and national fallen-firefighter memorials.", inner)
+
+
 # ======================= BUILD =======================
 if __name__ == "__main__":
     page("index.html", "HFFA Local 1463 — Hawaii Fire Fighters Association",
@@ -488,7 +548,16 @@ if __name__ == "__main__":
          "index.html", main_home())
     page("benefits.html", "Benefits — HFFA Local 1463",
          "HFFA MetLife supplemental group benefits, PEC portal, health-screening credits, and dental guidance for Local 1463 members.",
-         "benefits.html", main_benefits())
+         "members.html", main_benefits())
+    page("members.html", "Members — HFFA Local 1463",
+         "Member resources for HFFA Local 1463 — shift calendar, CBA documents, grievances, contract updates, and benefits.",
+         "members.html", main_members())
+    page("wellness.html", "Wellness — HFFA Local 1463",
+         "Firefighter wellness — cancer awareness, behavioral health, and crisis and peer support for Local 1463 members and families.",
+         "wellness.html", main_wellness())
+    page("in-memoriam.html", "In Memoriam — HFFA Local 1463",
+         "Honoring the Hawai'i firefighters we have lost, and the IAFF and national fallen-firefighter memorials.",
+         "in-memoriam.html", main_inmemoriam())
     page("news.html", "News & Updates — HFFA Local 1463",
          "HFFA Local 1463 news: SSA/WEP-GPO, foundations and the Signature Chefs Festival, scam alerts, and behavioral-health resources.",
          "news.html", main_news())
