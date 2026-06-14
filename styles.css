@@ -82,8 +82,8 @@ a { color:inherit; }
 .logo-badge { width:56px;height:56px;flex:none;object-fit:contain;filter:drop-shadow(0 2px 6px rgba(0,0,0,.45)); }
 .logo-text strong { display:block;font-family:var(--font-head);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:16px;color:#fff;line-height:1.05; }
 .logo-text span { display:block;font-size:10px;color:var(--gold);font-weight:700;letter-spacing:.12em; }
-.nav-desktop { display:flex;gap:24px;align-items:center; }
-.nav-link { color:rgba(255,255,255,.82);font-family:var(--font-body);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding-bottom:3px;border-bottom:2px solid transparent;transition:all var(--speed) ease; }
+.nav-desktop { display:flex;gap:18px;align-items:center; }
+.nav-link { color:rgba(255,255,255,.82);font-family:var(--font-body);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;white-space:nowrap;padding-bottom:3px;border-bottom:2px solid transparent;transition:all var(--speed) ease; }
 .nav-link:hover, .nav-link[aria-current="page"] { color:var(--gold);border-bottom-color:var(--gold); }
 .nav-actions { display:flex;align-items:center;gap:10px; }
 .nav-desktop-cta { }
