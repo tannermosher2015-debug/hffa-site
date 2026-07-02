@@ -182,7 +182,7 @@ a { color:inherit; }
 .stat { padding:28px 20px;text-align:center;border-right:1px solid rgba(245,215,0,.12); }
 .stat:last-child { border-right:0; }
 .stat-num { font-family:var(--font-head);font-weight:900;font-size:44px;color:var(--gold);line-height:1; }
-.stat-label { font-size:11px;color:rgba(255,255,255,.6);font-weight:500;letter-spacing:.07em;text-transform:uppercase;margin-top:6px; }
+.stat-label { font-size:11px;color:#fff;font-weight:500;letter-spacing:.07em;text-transform:uppercase;margin-top:6px; }
 
 /* resources */
 .res-head { text-align:center;margin-bottom:30px; }
@@ -226,14 +226,14 @@ footer { background:var(--dark);color:rgba(255,255,255,.6);padding:40px 0 22px;b
 .footer-brand .logo-row { display:flex;align-items:center;gap:12px;margin-bottom:10px; }
 .footer-brand .logo-row img { width:46px;height:46px;object-fit:contain; }
 .footer-brand .logo-row strong { font-family:var(--font-head);font-weight:700;font-size:14px;color:#fff;text-transform:uppercase;letter-spacing:.03em;line-height:1.2; }
-.footer-brand .meta { font-size:11px;color:rgba(255,255,255,.4);margin-bottom:3px; }
+.footer-brand .meta { font-size:11px;color:rgba(255,255,255,.6);margin-bottom:3px; }
 .footer-brand .phone { font-size:12px;color:var(--gold);margin-top:6px; }
 .footer-cols { display:flex;gap:44px;flex-wrap:wrap; }
 .footer-col .label { display:block;margin-bottom:10px;color:var(--red); }
 .footer-col a { display:block;font-size:13px;color:rgba(255,255,255,.5);text-decoration:none;margin-bottom:7px;transition:color var(--speed) ease; }
 .footer-col a:hover { color:var(--gold); }
 .footer-bottom { border-top:1px solid rgba(255,255,255,.08);padding-top:14px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap; }
-.footer-bottom .copy { font-size:11px;color:rgba(255,255,255,.28); }
+.footer-bottom .copy { font-size:11px;color:rgba(255,255,255,.55); }
 .footer-bottom .strong-tag { font-family:var(--font-head);font-weight:900;font-size:13px;color:var(--gold);letter-spacing:.06em;text-transform:uppercase; }
 
 /* ===== Sub-page hero ===== */

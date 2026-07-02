@@ -421,14 +421,14 @@ def main_contact():
         <h3>⚠️ Phone-Solicitation Notice</h3>
         <p>Hawaii Fire Fighters Association is <strong>not</strong> conducting phone solicitations. If contacted for donations, do not give out your information — verify the organization first.</p>
       </div>
-      <p style="margin-top:16px"><a class="card-link" href="https://www.facebook.com/" target="_blank" rel="noopener">Visit our Facebook page →</a></p>
+      <p style="margin-top:16px"><a class="card-link" href="https://www.facebook.com/HFFA1463" target="_blank" rel="noopener">Visit our Facebook page →</a></p>
     </aside>
   </div>
 
   <div class="form-section" id="register" style="margin-top:48px">
     <span class="red-bar" aria-hidden="true"></span>
     <h2>Member Registration &amp; Info</h2>
-    <p class="sub">New member or need to update your details? Submit your membership information below. <strong>Account login &amp; password setup are handled on our secure member portal</strong> — <a href="#" aria-label="Member portal (link to be provided)">log in to the member portal</a>.</p>
+    <p class="sub">New member or need to update your details? Submit your membership information below. <strong>Account login &amp; password setup are handled on our secure member portal</strong> - member portal login <em>coming soon</em>.</p>
     <form class="form" name="membership-info" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" style="max-width:100%">
       <input type="hidden" name="form-name" value="membership-info" />
       <p class="hp"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
