@@ -1,7 +1,7 @@
 """Generator for the HFFA Local 1463 multi-page site.
 Writes every .html file from shared chrome + per-page content.
 Run:  python build_site.py
-This is a local dev tool — it is NOT needed by Netlify at runtime."""
+This is a local dev tool - it is NOT needed by Netlify at runtime."""
 import os
 OUT = os.path.dirname(os.path.abspath(__file__))
 
@@ -116,7 +116,7 @@ def footer():
       '<strong>Hawaii Fire Fighters Association</strong></div>'
       '<div class="meta">HFFA Local 1463 · IAFF · AFL-CIO</div>'
       '<div class="meta">1018 Palm Drive, Honolulu HI 96814</div>'
-      '<div class="meta">Office Hours: 8:00 a.m.–4:30 p.m., Mon–Fri</div>'
+      '<div class="meta">Office Hours: 8:00 a.m. to 4:30 p.m., Mon to Fri</div>'
       '<div class="phone">808-949-1566 · 800-310-1566 (toll-free) · Fax 808-952-6003</div>'
       '<div class="phone"><a href="mailto:info@iafflocal1463.org" style="color:var(--gold)">info@iafflocal1463.org</a></div>'
       '<div class="social-row" aria-label="HFFA on social media">'
@@ -156,7 +156,7 @@ def main_home():
     <div class="hero-main">
       <span class="label">Representing ~1,900 firefighters statewide</span>
       <h1 id="hero-h">You Can <span class="gold">Count On Us.</span></h1>
-      <p class="hero-lead">HFFA Local 1463 has fought for Hawaii's fire service since 1963 — at the bargaining table, in the legislature, and alongside our members every single shift.</p>
+      <p class="hero-lead">HFFA Local 1463 has fought for Hawaii's fire service since 1963 - at the bargaining table, in the legislature, and alongside our members every single shift.</p>
       <div class="hero-cta">
         <a class="btn btn-gold" href="contact.html#register">Become a Member</a>
         <a class="btn btn-ghost" href="members.html">Contract Updates</a>
@@ -178,8 +178,8 @@ def main_home():
     <span class="red-bar" aria-hidden="true"></span>
     <h2 class="hl" id="notices-h" style="font-size:22px;margin-bottom:14px">Latest Notices</h2>
     <div class="notice-list">
-      <div class="notice"><span class="emoji" aria-hidden="true">🏛️</span><div><b>Office Closed — King Kamehameha I Day</b><span>The HFFA office is closed Thursday, June 11, reopening Friday. Enjoy the parades across the State and stay safe. Mahalo!</span></div></div>
-      <div class="notice"><span class="emoji" aria-hidden="true">🚗</span><div><b>Drive Pono — School's Out</b><span>Summer break and graduation season are here. Watch for our keiki, avoid distracted or impaired driving, and use a designated driver. Drive pono and arrive alive.</span></div></div>
+      <div class="notice"><span class="emoji" aria-hidden="true">🏛️</span><div><b>Office Closed: King Kamehameha I Day</b><span>The HFFA office is closed Thursday, June 11, reopening Friday. Enjoy the parades across the State and stay safe. Mahalo!</span></div></div>
+      <div class="notice"><span class="emoji" aria-hidden="true">🚗</span><div><b>Drive Pono: School's Out</b><span>Summer break and graduation season are here. Watch for our keiki, avoid distracted or impaired driving, and use a designated driver. Drive pono and arrive alive.</span></div></div>
     </div>
   </section>
 
@@ -229,15 +229,15 @@ def main_home():
       </div>
       <div class="notice-card">
         <h3><span class="emoji" aria-hidden="true">🕊️</span> In Memoriam</h3>
-        <p class="mem-item">Ret. Hawaii County FF George Sugi — passed May 6, 2026 (retired HFD 1985)</p>
-        <p class="mem-item">Ret. Honolulu Capt. Albert Young — 25 yrs, Quint 12; private service</p>
-        <p class="mem-item">Ret. Hawaii County FEO Darrel Sato — age 71, 25+ yrs of service</p>
+        <p class="mem-item">Ret. Hawaii County FF George Sugi, passed May 6, 2026 (retired HFD 1985)</p>
+        <p class="mem-item">Ret. Honolulu Capt. Albert Young, 25 yrs, Quint 12; private service</p>
+        <p class="mem-item">Ret. Hawaii County FEO Darrel Sato, age 71, 25+ yrs of service</p>
         <a class="card-link" href="in-memoriam.html">View In Memoriam →</a>
       </div>
       <div class="notice-card">
         <h3><span class="emoji" aria-hidden="true">📅</span> Upcoming Events</h3>
-        <div class="event"><div class="event-date">Sat. Sept 19, 2026</div><div class="event-name">IAFF Fallen Fire Fighter Memorial</div><div class="event-loc">Colorado Springs, CO — honoring FF Jeffrey Fiala</div></div>
-        <div class="event"><div class="event-date">October 2026</div><div class="event-name">HFF Signature Chefs Food Festival</div><div class="event-loc">13th annual — HFD Headquarters</div></div>
+        <div class="event"><div class="event-date">Sat. Sept 19, 2026</div><div class="event-name">IAFF Fallen Fire Fighter Memorial</div><div class="event-loc">Colorado Springs, CO, honoring FF Jeffrey Fiala</div></div>
+        <div class="event"><div class="event-date">October 2026</div><div class="event-name">HFF Signature Chefs Food Festival</div><div class="event-loc">13th annual, HFD Headquarters</div></div>
       </div>
       <div class="cancer-card">
         <h3><span class="emoji" aria-hidden="true">🎗️</span> Wellness &amp; Cancer Support</h3>
@@ -266,7 +266,7 @@ def main_home():
   <section class="about-band" aria-labelledby="about-teaser-h" style="margin-top:48px">
     <div class="about-copy">
       <h2 id="about-teaser-h">Working For You 24/7</h2>
-      <p>Since 1963, HFFA Local 1463 has been the exclusive collective-bargaining representative for all City, State, and County firefighters in Hawai'i — an affiliate of the IAFF, AFL-CIO. When seconds count, our members protect lives knowing their Union is looking out for them.</p>
+      <p>Since 1963, HFFA Local 1463 has been the exclusive collective-bargaining representative for all City, State, and County firefighters in Hawai'i, an affiliate of the IAFF, AFL-CIO. When seconds count, our members protect lives knowing their Union is looking out for them.</p>
     </div>
     <a class="btn btn-gold" href="about.html">Learn About Us →</a>
   </section>
@@ -281,12 +281,12 @@ def page_body(label, h1, lead, inner):
 
 def main_benefits():
     inner = r'''<h2>HFFA MetLife Supplemental Group Benefit Plan</h2>
-<p>Learn more about these voluntary, supplemental benefits — carefully designed and underwritten by MetLife to provide the highest level of coverage with the best group rates, specifically for our HFFA active-duty members. Premiums are paid conveniently through payroll deduction.</p>
+<p>Learn more about these voluntary, supplemental benefits, carefully designed and underwritten by MetLife to provide the highest level of coverage with the best group rates, specifically for our HFFA active-duty members. Premiums are paid conveniently through payroll deduction.</p>
 <p><strong>Eligibility:</strong> All full-time members actively working a minimum of 30 hours are eligible to enroll during open enrollment. <em>Documents in the member portal are for members only.</em></p>
 
 <h2>Plan Features</h2>
 <div class="info-grid">
-  <div class="info-card"><h3>Accident Insurance</h3><p>Helps manage medical costs from accidental injuries on and off the job. Benefits are paid directly to you for initial care, injuries, and follow-up — in addition to any other coverage.</p></div>
+  <div class="info-card"><h3>Accident Insurance</h3><p>Helps manage medical costs from accidental injuries on and off the job. Benefits are paid directly to you for initial care, injuries, and follow-up, in addition to any other coverage.</p></div>
   <div class="info-card"><h3>Hospital Indemnity</h3><p>Expecting a newborn or planning a surgery? Ask about the hospital indemnity plan for help with unexpected hospital costs.</p></div>
   <div class="info-card"><h3>Legal Plan</h3><p>Participating Hawaii attorneys can assist with wills and trusts, family law, traffic, and more, organized by legal topic.</p></div>
   <div class="info-card"><h3>Critical Illness w/ Cancer</h3><p>Coverage that pays a benefit on diagnosis of a covered critical illness, including cancer.</p></div>
@@ -305,29 +305,29 @@ def main_benefits():
 <p>MetLife plan participants should register on both portals. File claims at the <a href="https://servicing.online.metlife.com/public/site/presignin?grpNumber=231849" target="_blank" rel="noopener">MetLife MyBenefits page</a> (group&nbsp;#231849), and manage enrollment through the <a href="https://metlife.benselect.com/Enroll/Login.aspx" target="_blank" rel="noopener">PEC enrollment portal</a>.</p>
 
 <div class="callout callout-red">
-  <h3>📞 PEC — Your Benefits Plan Administrator</h3>
-  <p>The PEC team can assist with questions about plan coverages. Email the dedicated HFFA line at <a href="mailto:hffacustomerservice@pecworksite.com">hffacustomerservice@pecworksite.com</a> — they understand shift work and will reply with the best time to reach you.</p>
-  <p><strong>PEC Benefits Service Call Center: (800) 747-6009</strong><br>Mon–Fri 4 a.m.–3 p.m. HST · Sat 5–11 a.m. HST</p>
+  <h3>📞 PEC: Your Benefits Plan Administrator</h3>
+  <p>The PEC team can assist with questions about plan coverages. Email the dedicated HFFA line at <a href="mailto:hffacustomerservice@pecworksite.com">hffacustomerservice@pecworksite.com</a> - they understand shift work and will reply with the best time to reach you.</p>
+  <p><strong>PEC Benefits Service Call Center: (800) 747-6009</strong><br>Mon to Fri 4 a.m. to 3 p.m. HST · Sat 5 to 11 a.m. HST</p>
 </div>
 
 <h3>Dental Coverage</h3>
-<p>Dental insurance is <strong>not</strong> included in the MetLife plan. For dental, contact <a href="https://eutf.hawaii.gov/" target="_blank" rel="noopener">EUTF</a> — Oahu (808) 586-7390, Toll-Free 1-800-295-0089. Note: if you carry the 24-Hour Accident plan, you are covered for certain dental repairs resulting from an accident (see your Accident Certificate).</p>
+<p>Dental insurance is <strong>not</strong> included in the MetLife plan. For dental, contact <a href="https://eutf.hawaii.gov/" target="_blank" rel="noopener">EUTF</a>, Oahu (808) 586-7390, Toll-Free 1-800-295-0089. Note: if you carry the 24-Hour Accident plan, you are covered for certain dental repairs resulting from an accident (see your Accident Certificate).</p>
 
 <p class="disclaimer">Anton Financial is not affiliated with Hawaii Fire Fighters Association.</p>'''
     return page_body("Member Resources", "Medical &amp; Group Benefits",
-        "Voluntary supplemental coverage built for HFFA members — MetLife group benefits, PEC support, and health-screening credits.", inner)
+        "Voluntary supplemental coverage built for HFFA members: MetLife group benefits, PEC support, and health-screening credits.", inner)
 
 
 def main_news():
     inner = r'''<h2>SSA · WEP-GPO Update</h2>
 <h3>A Message from Congressman Ed Case</h3>
-<p>In a February 27, 2025 letter to HFFA President Robert H. Lee, Congressman Ed Case shared an update on the <strong>Social Security Fairness Act</strong> — which repealed the Windfall Elimination Provision (WEP) and Government Pension Offset (GPO) that had reduced benefits for many public-service workers with pensions.</p>
+<p>In a February 27, 2025 letter to HFFA President Robert H. Lee, Congressman Ed Case shared an update on the <strong>Social Security Fairness Act</strong>, which repealed the Windfall Elimination Provision (WEP) and Government Pension Offset (GPO) that had reduced benefits for many public-service workers with pensions.</p>
 <p>The SSA announced it would immediately begin paying retroactive benefits and increasing monthly payments for those impacted. Read the SSA's <a href="https://www.ssa.gov/benefits/retirement/social-security-fairness-act.html" target="_blank" rel="noopener">Social Security Fairness Act update</a> and subscribe for changes.</p>
 
 <h2>In Support of Fire Fighters</h2>
 <p>In Hawaii, two foundations are associated with HFFA:</p>
 <div class="info-grid">
-  <div class="info-card"><h3>Honolulu Firefighters Foundation (HFF)</h3><p>Originator of the annual <strong>Signature Chefs Food Festival</strong> — planning its 13th annual event this <strong>October</strong> at HFD Headquarters. Proceeds support HFD members, the Straub Burn Unit, and smoke-alarm installations in kupuna homes on O'ahu. Ticket sales are by mail and online only — no cold calls. Questions: <a href="mailto:lee-ann@pacificrimconcepts.com">lee-ann@pacificrimconcepts.com</a> (Pacific Rim Concepts).</p></div>
+  <div class="info-card"><h3>Honolulu Firefighters Foundation (HFF)</h3><p>Originator of the annual <strong>Signature Chefs Food Festival</strong>, planning its 13th annual event this <strong>October</strong> at HFD Headquarters. Proceeds support HFD members, the Straub Burn Unit, and smoke-alarm installations in kupuna homes on O'ahu. Ticket sales are by mail and online only, no cold calls. Questions: <a href="mailto:lee-ann@pacificrimconcepts.com">lee-ann@pacificrimconcepts.com</a> (Pacific Rim Concepts).</p></div>
   <div class="info-card"><h3>Hawaiian Islands Fire Foundation (HIFF)</h3><p>A newly created statewide foundation to support all HFFA members. HIFF is not conducting a fundraiser at this time as it develops its programs.</p></div>
 </div>
 <p>Other legitimate mainland firefighter foundations we are familiar with:</p>
@@ -343,40 +343,40 @@ def main_news():
 def main_about():
     inner = r'''<h2>Working For You 24/7</h2>
 <p>The Hawaii Fire Fighters Association (HFFA Local 1463) is an affiliate of the International Association of Fire Fighters (IAFF), AFL-CIO. Since <strong>1963</strong>, HFFA Local 1463 has been the exclusive collective-bargaining representative for all City, State, and County firefighters in Hawai'i.</p>
-<p>Its primary role is to negotiate and administer the collective bargaining agreement that governs the terms and conditions of firefighter employment — while handling grievances and performing labor-related and legislative activities in the interest of its members.</p>
+<p>Its primary role is to negotiate and administer the collective bargaining agreement that governs the terms and conditions of firefighter employment, while handling grievances and performing labor-related and legislative activities in the interest of its members.</p>
 
 <h2>Part of a National Force</h2>
-<p>As of May 1, 2024, IAFF membership rose to <strong>345,493 members</strong>, making it one of the largest and most influential labor unions in North America — committed to advancing the rights, safety, and future of firefighters, emergency medical workers, and rescue workers across the United States and Canada.</p>
+<p>As of May 1, 2024, IAFF membership rose to <strong>345,493 members</strong>, making it one of the largest and most influential labor unions in North America, committed to advancing the rights, safety, and future of firefighters, emergency medical workers, and rescue workers across the United States and Canada.</p>
 <p>The IAFF is the driving force behind nearly every advance in the fire and emergency services in the 21st century. With headquarters in Washington, D.C., and Ottawa, Ontario, the IAFF represents full-time professional firefighters and paramedics in more than 3,500 affiliates, protecting more than 85 percent of the population in communities throughout the U.S. and Canada. Its Political Action Committee, <strong>FIREPAC</strong>, is among the top one-half of one percent of the nearly 6,000 federally registered PACs in the country.</p>
 
 <h2>Second to None</h2>
-<p>It is an undeniable fact that among labor organizations, HFFA and its parent union, the IAFF, are second to none when it comes to membership representation. Whether at the bargaining table or in the legislative halls of Washington, D.C.; from the county council to the Fire Chief's office; in the courts and throughout the 50th state — Hawai'i's firefighters are ably represented.</p>
+<p>It is an undeniable fact that among labor organizations, HFFA and its parent union, the IAFF, are second to none when it comes to membership representation. Whether at the bargaining table or in the legislative halls of Washington, D.C.; from the county council to the Fire Chief's office; in the courts and throughout the 50th state - Hawai'i's firefighters are ably represented.</p>
 <p>You can count on HFFA Local 1463 members to bravely protect lives and property, knowing that their Union is looking out for them. Because when seconds count, saving a life is all that matters.</p>'''
     return page_body("Working For You 24/7", "About HFFA Local 1463",
-        "Representing Hawai'i's firefighters since 1963 — at the bargaining table, in the legislature, and on every shift.", inner)
+        "Representing Hawai'i's firefighters since 1963 - at the bargaining table, in the legislature, and on every shift.", inner)
 
 
 def main_retirees():
     inner = r'''<div class="callout callout-red">
-  <h3>☕ Retirement, Medicare &amp; the Windfall Act — Coffee Talk</h3>
+  <h3>☕ Retirement, Medicare &amp; the Windfall Act: Coffee Talk</h3>
   <p>Presented by representatives of the Hawaii State Health Insurance Assistance Program (SHIP) and the Social Security Administration. Space is limited at the HFFA Office. To sign up, email <a href="mailto:daisyfire@hawaiifirefighters.org">daisyfire@hawaiifirefighters.org</a>.</p>
 </div>
 
-<h2>Nā Lei Kukui — HFD Newsletter</h2>
-<p>Sharing stories, building bonds, enriched with HFD culture. In August 2023, the Honolulu Fire Department published the inaugural issue of <em>Nā Lei Kukui</em>. Each issue keeps the HFD ʻOhana informed and engaged — stories of courage, department events, off-duty gatherings, and accounts of the Department's rich history and community involvement.</p>
-<p>The goal of Nā Lei Kukui is <strong>for members, by our members</strong> — reach out to the working group with feedback and suggestions. To contribute or subscribe, email <a href="mailto:hfdnewsletter@honolulu.gov">hfdnewsletter@honolulu.gov</a>.</p>
+<h2>Nā Lei Kukui: HFD Newsletter</h2>
+<p>Sharing stories, building bonds, enriched with HFD culture. In August 2023, the Honolulu Fire Department published the inaugural issue of <em>Nā Lei Kukui</em>. Each issue keeps the HFD ʻOhana informed and engaged, stories of courage, department events, off-duty gatherings, and accounts of the Department's rich history and community involvement.</p>
+<p>The goal of Nā Lei Kukui is <strong>for members, by our members</strong> - reach out to the working group with feedback and suggestions. To contribute or subscribe, email <a href="mailto:hfdnewsletter@honolulu.gov">hfdnewsletter@honolulu.gov</a>.</p>
 <p><strong>Issues:</strong> March 2024 · November 2023 · August 2023</p>
 
 <h2>Honolulu Magazine Spotlight</h2>
 <h3>15 Trailblazing Women</h3>
 <p>In the April issue of Honolulu Magazine, "Leading Wahine: Meet 15 Who Inspire and Push Honolulu Forward" featured retired Battalion Chief <strong>Debbi Eleneki</strong> who, 35 years ago, was the only female firefighter. Her path to serve was instilled by her father, Peter Akiona, a retired rescue firefighter who taught her to respect others, give back, and keep her word. Those ethics prepared her to enter the firehouse in 1987 with heart, humility, and hard work.</p>'''
     return page_body("For Our Retirees", "Retirees",
-        "Resources, gatherings, and stories for HFFA Local 1463 retirees — Medicare and Windfall Act help, the HFD newsletter, and member spotlights.", inner)
+        "Resources, gatherings, and stories for HFFA Local 1463 retirees: Medicare and Windfall Act help, the HFD newsletter, and member spotlights.", inner)
 
 
 def main_contact():
     return r'''<section class="page-hero"><div class="wrap"><span class="label">Get in Touch</span>
-<h1>Contact Us</h1><p>Questions, grievances, or membership updates — reach the HFFA Local 1463 office. We're here to help.</p></div></section>
+<h1>Contact Us</h1><p>Questions, grievances, or membership updates - reach the HFFA Local 1463 office. We're here to help.</p></div></section>
 
 <div class="wrap content">
   <div class="contact-grid">
@@ -415,11 +415,11 @@ def main_contact():
         <dd><a href="tel:+18003101566">800-310-1566</a> (Toll-Free)</dd>
         <dd>808-952-6003 (Fax)</dd>
         <dt>Email</dt><dd><a href="mailto:info@iafflocal1463.org">info@iafflocal1463.org</a></dd>
-        <dt>Office Hours</dt><dd>8:00 a.m.–4:30 p.m., Monday–Friday</dd>
+        <dt>Office Hours</dt><dd>8:00 a.m. to 4:30 p.m., Monday to Friday</dd>
       </dl>
       <div class="callout callout-gold" style="margin-top:20px">
         <h3>⚠️ Phone-Solicitation Notice</h3>
-        <p>Hawaii Fire Fighters Association is <strong>not</strong> conducting phone solicitations. If contacted for donations, do not give out your information — verify the organization first.</p>
+        <p>Hawaii Fire Fighters Association is <strong>not</strong> conducting phone solicitations. If contacted for donations, do not give out your information - verify the organization first.</p>
       </div>
       <p style="margin-top:16px"><a class="card-link" href="https://www.facebook.com/HFFA1463" target="_blank" rel="noopener">Visit our Facebook page →</a></p>
     </aside>
@@ -476,19 +476,19 @@ def main_contact():
 
 def main_shop():
     inner = r'''<h2>HFFA Local 1463 Gear &amp; Merchandise</h2>
-<p>Show your Local 1463 pride. Official apparel, challenge coins, hats, towels, and more — with proceeds supporting our members and community programs.</p>
+<p>Show your Local 1463 pride. Official apparel, challenge coins, hats, towels, and more, with proceeds supporting our members and community programs.</p>
 <div class="callout callout-red">
   <h3><span class="emoji" aria-hidden="true">🛒</span> Visit Our Official Store</h3>
-  <p>Our full catalog — tees, polos, dri-fit gear, snapbacks, challenge coins, the 2026–2027 calendar and more — is available now on our secure Square store.</p>
+  <p>Our full catalog - tees, polos, dri-fit gear, snapbacks, challenge coins, the 2026-2027 calendar and more - is available now on our secure Square store.</p>
   <a class="btn btn-gold" href="https://hawaii-fire-fighters-association.square.site" target="_blank" rel="noopener" style="margin-top:6px">Shop the HFFA Store →</a>
 </div>
 <p style="margin-top:18px"><strong>A built-in product gallery is coming soon to this page.</strong> For now, browse and order through the store above, or call the HFFA office at <a href="tel:+18089491566">808-949-1566</a> for assistance.</p>
 <p class="disclaimer">The Local 1463 logo is a registered trademark of the Hawaii Fire Fighters Association and may not be used without express authorization.</p>'''
-    return page_body("Member Store", "Shop", "Official HFFA Local 1463 apparel and gear — proceeds support our members and community.", inner)
+    return page_body("Member Store", "Shop", "Official HFFA Local 1463 apparel and gear - proceeds support our members and community.", inner)
 
 
 def main_members():
-    inner = r'''<p>Resources for active HFFA Local 1463 members. Most member documents are distributed through the office or the secure member system — <a href="contact.html">contact us</a> anytime and we'll get you what you need.</p>
+    inner = r'''<p>Resources for active HFFA Local 1463 members. Most member documents are distributed through the office or the secure member system - <a href="contact.html">contact us</a> anytime and we'll get you what you need.</p>
 
 <h2>Contract &amp; Negotiations</h2>
 <div class="callout callout-red">
@@ -499,7 +499,7 @@ def main_members():
 <h2>Member Resources</h2>
 <div class="info-grid">
   <div class="info-card" id="shift-calendar"><h3>Shift Calendar</h3><p>Current 1st, 2nd, and 3rd Platoon schedules for all departments. Request the latest schedule from the office.</p></div>
-  <div class="info-card" id="cba-documents"><h3>CBA Documents</h3><p>The collective bargaining agreement governing the terms and conditions of employment — available to members through the office.</p></div>
+  <div class="info-card" id="cba-documents"><h3>CBA Documents</h3><p>The collective bargaining agreement governing the terms and conditions of employment, available to members through the office.</p></div>
   <div class="info-card" id="file-a-grievance"><h3>File a Grievance</h3><p>Have a workplace issue? Reach out to your union steward or the HFFA office to start the grievance process.</p></div>
   <div class="info-card"><h3>Member Benefits</h3><p>Voluntary MetLife supplemental coverage, PEC support, and health-screening credits. <a href="benefits.html">See full Benefits →</a></p></div>
 </div>
@@ -508,11 +508,11 @@ def main_members():
   <h3>🤝 Need something specific?</h3>
   <p>For shift schedules, CBA documents, grievance help, or contract questions, <a href="contact.html">contact the HFFA office</a> at 808-949-1566 or info@iafflocal1463.org. Also see <a href="wellness.html">Wellness &amp; Support</a> for behavioral-health and cancer resources.</p>
 </div>'''
-    return page_body("For Our Members", "Members", "Shift schedules, CBA documents, grievances, contract updates, and benefits — everything for active Local 1463 members.", inner)
+    return page_body("For Our Members", "Members", "Shift schedules, CBA documents, grievances, contract updates, and benefits - everything for active Local 1463 members.", inner)
 
 
 def main_wellness():
-    inner = r'''<p>Your health and safety come first. HFFA Local 1463 and the IAFF provide resources for firefighter wellness — from occupational cancer to behavioral health.</p>
+    inner = r'''<p>Your health and safety come first. HFFA Local 1463 and the IAFF provide resources for firefighter wellness, from occupational cancer to behavioral health.</p>
 
 <h2>Firefighter Cancer Awareness</h2>
 <div class="callout callout-gold">
@@ -526,7 +526,7 @@ def main_wellness():
 <p>The cumulative traumatic stresses faced by firefighters, paramedics, and EMTs can affect mental health and well-being. Support is available, and reaching out is a sign of strength.</p>
 
 <h3>IAFF Center of Excellence</h3>
-<p>The IAFF Center of Excellence for Behavioral Health Treatment and Recovery is an addiction-treatment facility built specifically for IAFF members — a safe place to recover alongside others who understand the job.</p>
+<p>The IAFF Center of Excellence for Behavioral Health Treatment and Recovery is an addiction-treatment facility built specifically for IAFF members, a safe place to recover alongside others who understand the job.</p>
 <p>13400 Edgemeade Rd, Upper Marlboro, MD 20772 · (301) 327-1955 · <a href="https://www.iaffrecoverycenter.com" target="_blank" rel="noopener">iaffrecoverycenter.com</a></p>
 <p>Learn more about IAFF <a href="https://www.iaff.org/behavioral-health/" target="_blank" rel="noopener">behavioral-health resources</a>.</p>
 
@@ -552,40 +552,40 @@ def main_inmemoriam():
   <h3>🕊️ IAFF Fallen Fire Fighter Memorial</h3>
   <p>The IAFF's 40th Fallen Fire Fighter Memorial Observance is Saturday, September 19, 2026, in Colorado Springs. Honolulu FF1 <strong>Jeffrey Fiala</strong>'s name will be engraved on the IAFF Wall of Honor alongside others who made the ultimate sacrifice. <a href="https://www.iaff.org" target="_blank" rel="noopener">Learn more →</a></p>
 </div>
-<p><strong>National Fallen Firefighters Memorial</strong> — held May 2–3, 2026 in Emmitsburg, Maryland, honoring firefighters from 2025 and prior years. Learn more at the <a href="https://www.firehero.org" target="_blank" rel="noopener">National Fallen Firefighters Foundation</a>.</p>'''
+<p><strong>National Fallen Firefighters Memorial</strong>, held May 2 to 3, 2026 in Emmitsburg, Maryland, honoring firefighters from 2025 and prior years. Learn more at the <a href="https://www.firehero.org" target="_blank" rel="noopener">National Fallen Firefighters Foundation</a>.</p>'''
     return page_body("In Memoriam", "In Memoriam", "Honoring the Hawai'i firefighters we have lost, and the IAFF and national fallen-firefighter memorials.", inner)
 
 
 # ======================= BUILD =======================
 if __name__ == "__main__":
-    page("index.html", "HFFA Local 1463 — Hawaii Fire Fighters Association",
-         "Hawaii Fire Fighters Association — HFFA Local 1463, IAFF/AFL-CIO. Representing ~1,900 firefighters statewide since 1963. You Can Count On Us.",
+    page("index.html", "HFFA Local 1463 - Hawaii Fire Fighters Association",
+         "Hawaii Fire Fighters Association, HFFA Local 1463, IAFF/AFL-CIO. Representing ~1,900 firefighters statewide since 1963. You Can Count On Us.",
          "index.html", main_home())
-    page("benefits.html", "Benefits — HFFA Local 1463",
+    page("benefits.html", "Benefits - HFFA Local 1463",
          "HFFA MetLife supplemental group benefits, PEC portal, health-screening credits, and dental guidance for Local 1463 members.",
          "members.html", main_benefits())
-    page("members.html", "Members — HFFA Local 1463",
-         "Member resources for HFFA Local 1463 — shift calendar, CBA documents, grievances, contract updates, and benefits.",
+    page("members.html", "Members - HFFA Local 1463",
+         "Member resources for HFFA Local 1463: shift calendar, CBA documents, grievances, contract updates, and benefits.",
          "members.html", main_members())
-    page("wellness.html", "Wellness — HFFA Local 1463",
-         "Firefighter wellness — cancer awareness, behavioral health, and crisis and peer support for Local 1463 members and families.",
+    page("wellness.html", "Wellness - HFFA Local 1463",
+         "Firefighter wellness: cancer awareness, behavioral health, and crisis and peer support for Local 1463 members and families.",
          "wellness.html", main_wellness())
-    page("in-memoriam.html", "In Memoriam — HFFA Local 1463",
+    page("in-memoriam.html", "In Memoriam - HFFA Local 1463",
          "Honoring the Hawai'i firefighters we have lost, and the IAFF and national fallen-firefighter memorials.",
          "in-memoriam.html", main_inmemoriam())
-    page("news.html", "News & Updates — HFFA Local 1463",
+    page("news.html", "News & Updates - HFFA Local 1463",
          "HFFA Local 1463 news: SSA/WEP-GPO, foundations and the Signature Chefs Festival, scam alerts, and behavioral-health resources.",
          "news.html", main_news())
-    page("about.html", "About — HFFA Local 1463",
-         "About HFFA Local 1463 — Hawai'i's exclusive firefighter bargaining representative since 1963, an IAFF/AFL-CIO affiliate.",
+    page("about.html", "About - HFFA Local 1463",
+         "About HFFA Local 1463, Hawai'i's exclusive firefighter bargaining representative since 1963, an IAFF/AFL-CIO affiliate.",
          "about.html", main_about())
-    page("retirees.html", "Retirees — HFFA Local 1463",
-         "Retiree resources from HFFA Local 1463 — Medicare and Windfall Act help, the Nā Lei Kukui newsletter, and member spotlights.",
+    page("retirees.html", "Retirees - HFFA Local 1463",
+         "Retiree resources from HFFA Local 1463: Medicare and Windfall Act help, the Nā Lei Kukui newsletter, and member spotlights.",
          "retirees.html", main_retirees())
-    page("contact.html", "Contact — HFFA Local 1463",
-         "Contact HFFA Local 1463 — 1018 Palm Drive, Honolulu HI 96814 · 808-949-1566 · info@iafflocal1463.org. Member registration & info.",
+    page("contact.html", "Contact - HFFA Local 1463",
+         "Contact HFFA Local 1463: 1018 Palm Drive, Honolulu HI 96814 · 808-949-1566 · info@iafflocal1463.org. Member registration & info.",
          "contact.html", main_contact())
-    page("shop.html", "Shop — HFFA Local 1463",
-         "Official HFFA Local 1463 store — apparel, challenge coins, hats, and gear. Proceeds support our members and community.",
+    page("shop.html", "Shop - HFFA Local 1463",
+         "Official HFFA Local 1463 store: apparel, challenge coins, hats, and gear. Proceeds support our members and community.",
          "shop.html", main_shop())
     print("done.")
