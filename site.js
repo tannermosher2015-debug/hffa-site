@@ -120,7 +120,7 @@
       var data={}; new FormData(form).forEach(function(v,k){ data[k]=v; });
       fetch("/", { method:"POST", headers:{"Content-Type":"application/x-www-form-urlencoded"}, body:encode(data) })
         .then(function(r){ if(!r.ok) throw new Error(); if(status){ status.className="form-status ok"; status.textContent="Mahalo! Your message was received. The HFFA office will be in touch."; } form.reset(); })
-        .catch(function(){ if(status){ status.className="form-status err"; status.textContent="Sorry — something went wrong. Please call the office at 808-949-1566."; } });
+        .catch(function(){ if(status){ status.className="form-status err"; status.textContent="Sorry, something went wrong. Please call the office at 808-949-1566."; } });
     });
   })(forms[i]); }
 })();
