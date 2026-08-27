@@ -8,3 +8,9 @@
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    # This Netlify copy is a SAMPLE of a real union's site, so it must never
+    # surface in search for HFFA Local 1463. Set here and not in a robots.txt,
+    # because a disallowed page is never crawled and the tag is never read.
+    # The Hostinger twin (hffa.frontlinewebdesign.tech) already sends the same
+    # header from its own server config.
+    X-Robots-Tag = "noindex, nofollow"
